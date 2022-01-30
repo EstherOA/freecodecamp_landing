@@ -55,7 +55,7 @@ nav a {
 }
 
 #home {
-    padding: 150px 0 100px 0;
+    padding: 150px 20px 100px 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -76,7 +76,7 @@ nav a {
 
 #home img {
     border-radius: 50%;
-    background: cover;
+    width: 45%;
 }
 
 #about {
@@ -152,6 +152,7 @@ h2 {
 #video {
     display: block;
     margin: 0 auto;
+    width: 70%
 }
 
 #contact {
@@ -159,7 +160,7 @@ h2 {
 }
 
 #contact form {
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     width: 60%;
 }
 
@@ -200,4 +201,77 @@ footer {
 
 #footer-logo-text {
     color: black;
+}
+
+@media (max-width: 600px) {
+
+    #home img {
+        width: 45%;
+        height: auto;
+    }
+
+    #home {
+        padding: 130px 0 70px 0;
+    }
+
+    .hero-text-container {
+        padding: 40px 10px;
+    }
+
+    .hero-text-container h1 {
+        font-size: 1.2em;
+    }
+
+    .pricing-content {
+        grid-template-columns: unset;
+    }
+
+    .pricing-container {
+        width: 70%;
+        margin: 0 auto 30px auto;
+    }
+
+    footer, #contact form {
+        width: 70%;
+    }
+}
+
+@media (max-width: 360px) {
+    
+    .logo-container p {
+        font-size: 1em;
+        margin-left: 5px;
+    }
+
+    footer .logo-container p {
+        font-size: 0.8em;
+        margin-left: 0;
+    }
+
+    .features {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-feature img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer > p {
+        font-size: 10px;
+    }
+
+    #home {
+        flex-direction: column;
+    }
+
+    .hero-text-container, .hero-img {
+        margin: 0 auto;
+    }
+
+    .hero-img {
+        margin-top: 20px;
+    }
+
 }
