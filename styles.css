@@ -204,75 +204,66 @@ footer {
     color: black;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
 
-    #home img {
-        width: 45%;
-        height: auto;
+    nav li {
+        display: block;
+        padding: 10px 0;
     }
 
     #home {
-        padding: 130px 0 70px 0;
+        padding: 300px 20px 70px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home img {
+        width: 70%;
+        margin-top: 30px;
     }
 
     .hero-text-container {
-        padding: 40px 10px;
+        margin: 0;
+        width: 70%;
+        display: block;
+        padding: 30px 0;
     }
 
     .hero-text-container h1 {
-        font-size: 1.2em;
-    }
-
-    .pricing-content {
-        grid-template-columns: unset;
-    }
-
-    .pricing-container {
-        width: 70%;
-        margin: 0 auto 30px auto;
-    }
-
-    footer, #contact form {
-        width: 70%;
-    }
-}
-
-@media (max-width: 360px) {
-    
-    .logo-container p {
-        font-size: 1em;
-        margin-left: 5px;
-    }
-
-    footer .logo-container p {
-        font-size: 0.8em;
-        margin-left: 0;
+        font-size: 1.7em;
     }
 
     .features {
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
 
-    .about-feature img {
-        display: block;
-        margin: 0 auto;
+    .about-feature {
+        margin-bottom: 20px;
     }
 
-    footer > p {
-        font-size: 10px;
+    .pricing-content {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: unset;
+        grid-row-gap: 5%;
+        padding: 0 15%;
     }
 
-    #home {
-        flex-direction: column;
+    #contact #form {
+        width: 80%;
     }
 
-    .hero-text-container, .hero-img {
-        margin: 0 auto;
+    footer {
+        width: 70%;
+        font-size: 0.8em;
     }
 
-    .hero-img {
-        margin-top: 20px;
+    footer #footer-logo-text {
+        font-size: unset;
     }
-
 }
+
